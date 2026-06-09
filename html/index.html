@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FiveM Custom HUD</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="hud-container">
+        
+        <div class="top-right-hud">
+            <div class="info-box">
+                <span class="server-name">TE<span class="text-green">ST</span> x.x.x</span>
+                <span class="divider">|</span>
+                <span class="icon-text"><i class="fa-solid fa-users text-green"></i> <span id="player-count">080</span></span>
+            </div>
+            <div class="info-box">
+                <span class="icon-text"><i class="fa-regular fa-clock text-green"></i> <span id="time">10:00 pm</span></span>
+                <span class="divider">|</span>
+                <span class="icon-text"><i class="fa-solid fa-sun text-green"></i> <span id="temp">30°</span></span>
+            </div>
+            <div class="info-box">
+                <span class="icon-text"><i class="fa-solid fa-money-bill-wave"></i> <span id="cash">9,999,999</span></span>
+                <span class="divider">|</span>
+                <span class="icon-text"><i class="fa-solid fa-building-columns"></i> <span id="bank">9,999,999</span></span>
+            </div>
+        </div>
+
+        <div class="bottom-left-hud">
+            <div class="location-box">
+                <div class="loc-left">
+                    <i class="fa-solid fa-location-dot fa-lg"></i>
+                    <div class="loc-text">
+                        <span class="street-main text-green" id="street-name">Morningwood</span>
+                        <span class="street-sub" id="zone-name">West Eclipse Blvd</span>
+                    </div>
+                </div>
+                <div class="loc-right">
+                    <i class="fa-regular fa-compass fa-lg"></i>
+                    <div class="loc-text text-right">
+                        <span class="street-main text-green" id="heading-txt">SE</span>
+                        <span class="street-sub" id="heading-deg">138</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="minimap-placeholder"></div>
+
+            <div class="status-grid">
+                <div class="bar-container health-box" id="health-box"><div class="bar-fill health" id="health-bar"></div></div>
+                <div class="bar-container food-box" id="food-box"><div class="bar-fill food" id="food-bar"></div></div>
+                
+                <div class="bar-container stamina-box" id="stamina-box"><div class="bar-fill stamina" id="stamina-bar"></div></div>
+                <div class="bar-container water-box" id="water-box"><div class="bar-fill water" id="water-bar"></div></div>
+                
+                <div class="bar-container armor-box" id="armor-box"><div class="bar-fill armor" id="armor-bar"></div></div>
+                <div class="bar-container oxygen-box" id="oxygen-box"><div class="bar-fill oxygen" id="oxygen-bar"></div></div>
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
